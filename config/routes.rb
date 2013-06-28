@@ -1,10 +1,9 @@
 RentBuddy::Application.routes.draw do
   
+  root :to => "pages#home"
+
   devise_for :users
 
-  devise_scope :user do
-    root to: "devise/registrations#edit"
-  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
