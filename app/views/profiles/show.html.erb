@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @profile.user_id %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @profile.dob %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @profile.age %>
+</p>
+
+<p>
+  <b>Criminal:</b>
+  <%= @profile.criminal %>
+</p>
+
+<p>
+  <b>Sex offender:</b>
+  <%= @profile.sex_offender %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
